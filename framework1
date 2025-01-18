@@ -1,0 +1,122 @@
+import React from 'react';
+
+// Scene 1: Opening Hook
+const OpeningScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    <div className="h-full flex flex-col">
+      <div className="w-full px-6 pt-4"> 
+        <div className="text-center">
+          <div className="text-lg font-medium tracking-[0.3em] text-yellow-400 mb-2">FIRST COURSE</div>
+          <div className="text-8xl font-black tracking-tighter leading-[0.85] text-white" 
+               style={{textShadow: '2px 2px 0 rgba(0,0,0,0.2)'}}>
+            BILL GATES
+          </div>
+          <div className="text-7xl font-black tracking-tighter leading-[0.85] text-white -mt-1"
+               style={{textShadow: '2px 2px 0 rgba(0,0,0,0.2)'}}>
+            McDONALD'S
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0">
+        <div className="text-xl font-bold tracking-wide text-white/90 text-center">
+          STORY OMAKASE
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+// Scene 2: Background Context
+const SecondScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    <div className="h-full flex flex-col">
+      <div className="w-full px-6 pt-4">
+        <div className="text-lg font-medium tracking-[0.3em] text-yellow-400 mb-4">SECOND COURSE</div>
+        <div className="text-4xl font-bold mb-4">
+          The Richest Man's
+          <br />
+          Fast Food Secret
+        </div>
+        <div className="text-7xl font-black text-red-600 mb-4">
+          FREE
+          <br />
+          FOR LIFE
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0">
+        <div className="text-xl font-bold tracking-wide text-white/90 text-center">
+          STORY OMAKASE
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+// Scene 3: Detail Reveal
+const ThirdScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    <div className="h-full flex flex-col">
+      <div className="w-full px-6 pt-4">
+        <div className="text-lg font-medium tracking-[0.3em] text-yellow-400 mb-4">THIRD COURSE</div>
+        <div className="text-6xl font-black mb-3">
+          GOLD CARD
+        </div>
+        <div className="text-2xl font-bold text-yellow-400 mb-6">
+          The Most Exclusive McDonald's Card
+        </div>
+        <div className="text-lg text-gray-300 leading-relaxed">
+          Only a handful of people
+          <br />
+          in the world have this card
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0">
+        <div className="text-xl font-bold tracking-wide text-white/90 text-center">
+          STORY OMAKASE
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+// Scene 4: Final Reveal
+const FinalScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    <div className="h-full flex flex-col">
+      <div className="w-full px-6 pt-4">
+        <div className="text-lg font-medium tracking-[0.3em] text-yellow-400 mb-4">FINAL COURSE</div>
+        <div className="text-5xl font-black mb-3">
+          BUT WHY?
+        </div>
+        <div className="text-7xl font-black text-red-600 mb-4">
+          $1M+
+        </div>
+        <div className="text-2xl font-bold mb-4">
+          Spent at McDonald's
+          <br />
+          Every Year
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0">
+        <div className="text-xl font-bold tracking-wide text-white/90 text-center">
+          STORY OMAKASE
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const StoryOmakaseScenes = () => (
+  <div className="flex flex-col gap-4">
+    <OpeningScene />
+    <SecondScene />
+    <ThirdScene />
+    <FinalScene />
+  </div>
+);
+
+export default StoryOmakaseScenes;
