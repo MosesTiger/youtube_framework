@@ -1,0 +1,200 @@
+import React from 'react';
+
+// Scene 1: Mystery Hook
+const MysteryScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    {/* Dynamic grain effect overlay */}
+    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj4KICA8ZmlsdGVyIGlkPSJub2lzZSIgeD0iMCIgeT0iMCI+CiAgICA8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+CiAgPC9maWx0ZXI+CiAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+')] opacity-50" />
+    
+    {/* Main image with mystery overlay */}
+    <div className="absolute inset-0">
+      <img src="/api/placeholder/490/870" className="w-full h-full object-cover opacity-40" alt="Mystery" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+    </div>
+    
+    <div className="relative h-full flex flex-col">
+      {/* Top secret style header */}
+      <div className="pt-12 px-6 text-center">
+        <div className="inline-block px-4 py-1 border border-red-500 text-red-500 text-xs tracking-[0.3em] mb-4">
+          CLASSIFIED
+        </div>
+        <div className="text-7xl font-black leading-none mb-2">
+          HIDDEN
+        </div>
+        <div className="text-8xl font-black leading-none text-red-600 mb-4">
+          TRUTH
+        </div>
+        <div className="text-xl font-bold text-white/80">
+          behind the world's most
+          <br />
+          mysterious company
+        </div>
+      </div>
+
+      {/* Mystery elements */}
+      <div className="absolute bottom-24 left-6 right-6">
+        <div className="flex justify-between items-center text-sm tracking-wider text-white/60 mb-3">
+          <span>FILE REF: 2024-0118</span>
+          <span>STATUS: RESTRICTED</span>
+        </div>
+        <div className="h-px bg-gradient-to-r from-transparent via-red-500 to-transparent mb-3" />
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0 flex justify-between items-center px-6">
+        <div className="text-xl font-bold tracking-wide text-white/90">STORY OMAKASE</div>
+        <div className="text-sm font-medium tracking-[0.3em] text-red-500">01/04</div>
+      </div>
+    </div>
+  </div>
+);
+
+// Scene 2: Evidence Reveal
+const EvidenceScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    {/* Document style background */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900" />
+    
+    {/* Evidence images grid */}
+    <div className="absolute top-0 left-0 right-0 h-[40%] grid grid-cols-2 gap-0.5">
+      <div className="relative overflow-hidden">
+        <img src="/api/placeholder/245/348" className="w-full h-full object-cover" alt="Evidence 1" />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute top-2 left-2 text-xs tracking-wider bg-red-600/80 px-2 py-0.5">
+          EXHIBIT A
+        </div>
+      </div>
+      <div className="relative overflow-hidden">
+        <img src="/api/placeholder/245/348" className="w-full h-full object-cover" alt="Evidence 2" />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute top-2 left-2 text-xs tracking-wider bg-red-600/80 px-2 py-0.5">
+          EXHIBIT B
+        </div>
+      </div>
+    </div>
+    
+    <div className="relative h-full flex flex-col pt-[42%] px-6">
+      <div className="text-sm tracking-[0.3em] text-red-500 mb-4">EVIDENCE FOUND</div>
+      <div className="text-4xl font-black mb-4">
+        Uncovered Documents
+        <br />
+        Reveal The Truth
+      </div>
+      <div className="space-y-3">
+        <div className="p-4 rounded-lg bg-white/5 backdrop-blur-sm">
+          <div className="text-lg font-bold mb-1">Internal Memo #127</div>
+          <div className="text-sm text-gray-400">Date: [REDACTED]</div>
+        </div>
+        <div className="p-4 rounded-lg bg-white/5 backdrop-blur-sm">
+          <div className="text-lg font-bold mb-1">Secret Meeting Notes</div>
+          <div className="text-sm text-gray-400">Location: [CLASSIFIED]</div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0 flex justify-between items-center px-6">
+        <div className="text-xl font-bold tracking-wide text-white/90">STORY OMAKASE</div>
+        <div className="text-sm font-medium tracking-[0.3em] text-red-500">02/04</div>
+      </div>
+    </div>
+  </div>
+);
+
+// Scene 3: Key Discovery
+const DiscoveryScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    {/* Large featured discovery image */}
+    <div className="absolute inset-0">
+      <img src="/api/placeholder/490/870" className="w-full h-full object-cover" alt="Discovery" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
+    </div>
+    
+    <div className="relative h-full flex flex-col px-6">
+      <div className="mt-12">
+        <div className="inline-block px-3 py-1 bg-red-600 text-sm tracking-wider mb-4">
+          KEY DISCOVERY
+        </div>
+        <div className="text-8xl font-black text-white mb-4" style={{textShadow: '0 0 30px rgba(0,0,0,0.5)'}}>
+          $240M
+        </div>
+        <div className="text-3xl font-bold mb-6">
+          Hidden in Plain Sight
+        </div>
+      </div>
+
+      {/* Discovery details */}
+      <div className="mt-auto space-y-4 mb-24">
+        <div className="p-4 rounded-xl bg-black/60 backdrop-blur-sm border border-white/10">
+          <div className="text-lg font-bold mb-2">Connection Found</div>
+          <div className="text-sm text-gray-300 leading-relaxed">
+            Previously unknown links
+            <br />
+            between key players revealed
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0 flex justify-between items-center px-6">
+        <div className="text-xl font-bold tracking-wide text-white/90">STORY OMAKASE</div>
+        <div className="text-sm font-medium tracking-[0.3em] text-red-500">03/04</div>
+      </div>
+    </div>
+  </div>
+);
+
+// Scene 4: Final Revelation
+const RevelationScene = () => (
+  <div className="relative bg-black text-white" style={{ width: '490px', height: '870px' }}>
+    {/* Dramatic split background */}
+    <div className="absolute inset-0 grid grid-cols-2">
+      <div className="relative">
+        <img src="/api/placeholder/245/870" className="w-full h-full object-cover brightness-50" alt="Before" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent" />
+      </div>
+      <div className="relative">
+        <img src="/api/placeholder/245/870" className="w-full h-full object-cover brightness-50" alt="After" />
+        <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent" />
+      </div>
+    </div>
+    
+    <div className="relative h-full flex flex-col px-6">
+      <div className="mt-12">
+        <div className="text-sm tracking-[0.3em] text-red-500 mb-4">FINAL REVELATION</div>
+        <div className="text-7xl font-black mb-3">
+          The Real
+          <br />
+          Story
+        </div>
+        <div className="text-xl font-medium text-gray-300 leading-relaxed">
+          Everything we thought we knew
+          <br />
+          was wrong...
+        </div>
+      </div>
+
+      {/* Conclusion elements */}
+      <div className="mt-auto mb-24">
+        <div className="text-sm tracking-wider text-white/60 mb-2">CONCLUSION:</div>
+        <div className="text-2xl font-bold">
+          The Truth Will
+          <br />
+          Shock Everyone
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-0 right-0 flex justify-between items-center px-6">
+        <div className="text-xl font-bold tracking-wide text-white/90">STORY OMAKASE</div>
+        <div className="text-sm font-medium tracking-[0.3em] text-red-500">FINAL</div>
+      </div>
+    </div>
+  </div>
+);
+
+const StoryBehindScenes = () => (
+  <div className="flex flex-col gap-4">
+    <MysteryScene />
+    <EvidenceScene />
+    <DiscoveryScene />
+    <RevelationScene />
+  </div>
+);
+
+export default StoryBehindScenes;
